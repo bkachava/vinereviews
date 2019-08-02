@@ -27,6 +27,12 @@ reviews from Amazon's Vine Program are trustworthy.
 
 * ZEPL notebooks, the chosen data sets were `Shoes` and `Apparel`. 
 The data sets can be found [here](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt).
+
+![shoes](./Images/zepl_shoes.png)
+
+![apparel](./Images/zepl_apparel.png)
+
+
 These notebooks were used to:
 
   - __Extract__ one data set per notebook and counting the number of records (rows) in the dataset.
