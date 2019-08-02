@@ -27,11 +27,11 @@ reviews from Amazon's Vine Program are trustworthy.
 The data sets can be found [here](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt).
 These notebooks were used to:
 
-- __Extract__ one data set per notebook and counting the number of records (rows) in the dataset.
+  - __Extract__ one data set per notebook and counting the number of records (rows) in the dataset.
 
-- __Transform__ each data set to fit the tables created, considering the data types and column names.
+  - __Transform__ each data set to fit the tables created, considering the data types and column names.
 
-- __Load__ the data frames to the tables into the RDS instance. 
+  - __Load__ the data frames to the tables into the RDS instance. 
 
 The content of the ZEPL notebooks was copied into these [Jupyter Notebooks](./Notebooks/).
 
