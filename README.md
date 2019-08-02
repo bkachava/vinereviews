@@ -39,9 +39,9 @@ The content of the ZEPL notebooks was copied into these [Jupyter Notebooks](./No
 ### Level 2 
 
 * Used SQL to analyze the data. The SQL queries can be found [here](./Scripts/stats.sql) and 
- the views created can be found [here](../Scripts/views.sql).
+ the views created can be found [here](./Scripts/views.sql).
 
-* Made a [summary](./Summary/BigData_Summary.pdf) of the findings and analysis.
+* Created a [summary](./Summary/BigData_Summary.pdf) of the findings and analysis.
 
 
 
