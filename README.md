@@ -21,9 +21,9 @@ reviews from Amazon's Vine Program are trustworthy.
 
 ### Level 1
 
-* Created tables in the RDS database using this [script](./Scripts/schema.sql).
+* Tables in the RDS database using this [script](./Scripts/schema.sql).
 
-* Created ZEPL notebooks, the chosen data sets were `Shoes` and `Apparel`. 
+* ZEPL notebooks, the chosen data sets were `Shoes` and `Apparel`. 
 The data sets can be found [here](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt).
 These notebooks were used to:
 
@@ -38,10 +38,10 @@ The content of the ZEPL notebooks was copied into these [Jupyter Notebooks](./No
 
 ### Level 2 
 
-* Used SQL to analyze the data. The SQL queries can be found [here](./Scripts/stats.sql) and 
+* SQL queries to analyze the data can be found [here](./Scripts/stats.sql) and 
  the views created can be found [here](./Scripts/views.sql).
 
-* Created a [summary](./Summary/BigData_Summary.pdf) of the findings and analysis.
+* A [summary](./Summary/BigData_Summary.pdf) of the findings and analysis.
 
 
 
