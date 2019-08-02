@@ -30,7 +30,7 @@ The data sets can be found [here](https://s3.amazonaws.com/amazon-reviews-pds/ts
 
 ![shoes](./Images/zepl_shoes.png)
 
-![apparel](./Images/zepl_apparel.png)
+![apparel](./Images/zep_apparel.png)
 
 
 These notebooks were used to:
