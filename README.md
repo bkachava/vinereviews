@@ -21,9 +21,9 @@ reviews from Amazon's Vine Program are trustworthy.
 
 ### Level 1
 
-* Tables in the RDS database using this [script](./Scripts/schema.sql).
-
- [!cn](./Images/ct1.png)
+* Tables in the RDS database using this [script](./Scripts/schema.sql). Example:
+ 
+ ![cn](./Images/ct1.png)
 
 * ZEPL notebooks, the chosen data sets were `Shoes` and `Apparel`. 
 The data sets can be found [here](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt).
