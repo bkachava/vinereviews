@@ -321,3 +321,10 @@ SELECT * FROM vine_table_app WHERE vine = 'N'
 ORDER BY total_votes DESC LIMIT 5;
 
 
+-- Update the counts for the second data set before running the stats
+UPDATE customers
+SET customer_count = 
+   (SELECT repcustomers.customer_count + repcustomers.cdb_count AS s
+      FROM repcustomers
+      WHERE repcustomers.customer_id = customers.customer_id);
+
