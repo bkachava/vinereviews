@@ -18,8 +18,8 @@ CREATE TABLE customers (
   customer_count INT
 );
 
--- vine table
-CREATE TABLE vine_table (
+-- vine table for shoes data set
+CREATE TABLE vine_table_sho (
   review_id TEXT PRIMARY KEY,
   star_rating INTEGER,
   helpful_votes INTEGER,
@@ -27,22 +27,7 @@ CREATE TABLE vine_table (
   vine TEXT
 );
 
-
-
-CREATE TABLE repcustomers (
-  customer_id INT PRIMARY KEY NOT NULL UNIQUE,
-  cdb_count INT,
-  customer_count INT,
-  shoes BOOLEAN DEFAULT FALSE
-);
-
-UPDATE customers
-SET customer_count = 
-   (SELECT repcustomers.customer_count + repcustomers.cdb_count AS s
-      FROM repcustomers
-      WHERE repcustomers.customer_id = customers.customer_id);
-
-	 
+-- vine table for apparel data set
 CREATE TABLE vine_table_app (
   review_id TEXT PRIMARY KEY,
   star_rating INTEGER,
@@ -51,18 +36,11 @@ CREATE TABLE vine_table_app (
   vine TEXT
 );
 
-
-select * from customers where customer_id = 15957
-select * from customers where customer_id = 10206
-
-
-BEGIN;
-UPDATE customers
-SET customer_count = 
-   (SELECT repcustomers.customer_count + repcustomers.cdb_count AS s
-      FROM repcustomers
-      WHERE repcustomers.customer_id = customers.customer_id
-      AND repcustomers.customer_id < 50000);
-COMMIT;
-VACUUM customers;
+-- Table for updating the counts for the second dataset
+CREATE TABLE repcustomers (
+  customer_id INT PRIMARY KEY NOT NULL UNIQUE,
+  cdb_count INT,
+  customer_count INT,
+  shoes BOOLEAN DEFAULT FALSE
+);
 
